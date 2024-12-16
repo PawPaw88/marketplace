@@ -8,7 +8,7 @@ Selamat datang di proyek Marketplace Furniture! Ini adalah aplikasi web untuk ju
 - MongoDB 4.4 atau lebih baru
 - Web Server (misalnya Apache)
 - Ekstensi MongoDB untuk PHP
-- MongoDB Database Tools (untuk pengembang yang ingin membuat backup)
+- MongoDB Database Tools
 
 ## Langkah-langkah Membuka Proyek
 
@@ -16,23 +16,15 @@ Selamat datang di proyek Marketplace Furniture! Ini adalah aplikasi web untuk ju
 
 2. Pastikan MongoDB terinstal dan berjalan di sistem Anda.
 
-3. Buka Command Prompt atau Terminal, navigasi ke folder proyek:
-
-```
-
-cd path/to/your/project
-
-```
+3. Buka Command Prompt atau Terminal, navigasikan ke folder proyek anda
 
 4. Impor database yang sudah disediakan menggunakan perintah:
 
 ```
 
-mongorestore --db marketplace path/to/project/database_dump/marketplace
+mongorestore --db marketplace /database_dump/marketplace
 
 ```
-
-Jika mongorestore tidak dikenali, Anda mungkin perlu menginstal MongoDB Database Tools atau menggunakan path lengkap ke mongorestore.
 
 5. Buka file `config/db.php` dan pastikan konfigurasi sesuai:
 
