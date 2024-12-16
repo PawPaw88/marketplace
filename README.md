@@ -22,7 +22,7 @@ Selamat datang di proyek Marketplace Furniture! Ini adalah aplikasi web untuk ju
 
 ```
 
-mongorestore --db marketplace /database_dump/marketplace
+mongorestore --db marketplace database_dump/marketplace
 
 ```
 
