@@ -1,0 +1,280 @@
+.warning-icon {
+  color: #ffa500;
+  cursor: pointer;
+}
+
+.incomplete-field {
+  background-color: #fff3cd;
+}
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 200px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -100px;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}
+
+table th:nth-child(2),
+table td:nth-child(2) {
+  text-align: left;
+}
+
+.product-name-cell {
+  display: flex;
+  align-items: flex-start;
+  gap: 15px;
+  position: relative;
+  padding: 10px 0;
+  overflow: hidden;
+}
+
+.product-image-preview {
+  width: 50px;
+  height: 50px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 4px;
+  flex-shrink: 0;
+}
+
+.product-image-warning {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f8f9fa;
+  border-radius: 4px;
+  flex-shrink: 0;
+}
+
+.product-name {
+  flex-grow: 1;
+}
+
+table th:first-child,
+table td:first-child {
+  text-align: left;
+  padding-left: 15px;
+}
+
+.action-buttons {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+
+.action-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 5px;
+  border-radius: 4px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.2s ease, background-color 0.2s ease;
+}
+
+.action-btn.edit {
+  color: #4caf50;
+}
+
+.action-btn.delete {
+  color: #f44336;
+}
+
+tr:hover .action-btn {
+  opacity: 0.7;
+}
+
+.action-btn:hover {
+  opacity: 1;
+  background-color: #f5f5f5;
+}
+
+table th:nth-child(5),
+table td:nth-child(5) {
+  text-align: center;
+  white-space: nowrap;
+}
+
+.product-info {
+  flex-grow: 1;
+  transition: all 0.3s ease;
+}
+
+.product-description {
+  display: none;
+  font-size: 0.85em;
+  color: #666;
+  margin-top: 5px;
+  line-height: 1.4;
+}
+
+.product-actions {
+  display: none;
+  opacity: 0;
+  margin-top: 8px;
+  justify-content: flex-start;
+  gap: 8px;
+  transition: opacity 0.3s ease;
+}
+
+tr:hover .product-description,
+tr:hover .product-meta,
+tr:hover .product-actions {
+  display: flex;
+  opacity: 1;
+}
+
+tr:hover {
+  background-color: #f8f9fa;
+}
+
+tr:hover td {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.product-meta {
+  display: none;
+  font-size: 0.8em;
+  color: #888;
+  margin-top: 5px;
+}
+
+.action-btn.edit:hover {
+  background-color: #e3f2fd;
+  color: #1976d2;
+}
+
+.action-btn.delete:hover {
+  background-color: #ffebee;
+  color: #d32f2f;
+}
+
+tr {
+  transition: all 0.3s ease;
+}
+
+td {
+  transition: padding 0.3s ease;
+}
+
+.products-section {
+  overflow-x: hidden;
+}
+
+table {
+  width: 100%;
+  table-layout: fixed;
+  border-collapse: collapse;
+}
+
+table th:nth-child(1) {
+  width: 65%;
+}
+
+table td:nth-child(1) {
+  width: 75%;
+}
+
+table th:nth-child(2),
+table td:nth-child(2) {
+  width: 20%;
+}
+
+table th:nth-child(3),
+table td:nth-child(3) {
+  width: 20%;
+}
+
+table th:nth-child(4),
+table td:nth-child(4) {
+  width: 15%;
+}
+
+.product-name-cell {
+  display: flex;
+  align-items: flex-start;
+  gap: 15px;
+  position: relative;
+  padding: 10px 0;
+  overflow: hidden;
+}
+
+.product-info {
+  flex: 1;
+  min-width: 0;
+  position: relative;
+}
+
+.product-name {
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  white-space: normal;
+  line-height: 1.4;
+}
+
+.product-description,
+.product-meta,
+.product-actions {
+  position: relative;
+  left: 0;
+  background-color: transparent;
+  width: 100%;
+  padding: 4px 0;
+  display: none;
+}
+
+.product-description {
+  margin-top: 8px;
+}
+
+.product-meta {
+  margin-top: 4px;
+}
+
+.product-info {
+  flex: 1;
+  min-width: 0;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.product-image-preview,
+.product-image-warning {
+  flex: 0 0 50px;
+  width: 50px;
+  height: 50px;
+}
+
+td {
+  vertical-align: top;
+  position: relative;
+  overflow: visible;
+}

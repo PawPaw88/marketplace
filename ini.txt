@@ -1,0 +1,8 @@
+- Sound bayar
+- Favicon
+- Data User belum lengkap bisa checkout barang
+- Chat penjual dan pembeli
+- Rating produk
+- Multi Image Produk
+- Notifikasi
+- Pencarian

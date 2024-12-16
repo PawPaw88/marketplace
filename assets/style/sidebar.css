@@ -1,0 +1,112 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&display=swap");
+
+* {
+  transition: all 0.3s ease;
+}
+.logo {
+  font-family: "DM Serif Text", serif;
+  font-weight: 700;
+  font-size: 1.3rem;
+  color: #000000;
+  letter-spacing: 0.5px;
+  transition: transform 0.3s ease;
+  margin-bottom: 30px;
+}
+
+.sidebar {
+  width: 250px;
+  background-color: #f5f7f9;
+  color: #000000;
+  padding: 20px;
+  padding-top: 40px;
+  height: 100vh;
+  position: fixed;
+  overflow-y: auto;
+  transition: all 0.3s ease;
+}
+
+.nav-links {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-links li {
+  margin-bottom: 10px;
+}
+
+.nav-links a {
+  color: #333;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  padding: 15px 20px;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+  gap: 10px;
+}
+
+.nav-links a:hover {
+  background-color: #e7e7e7;
+  transform: translateX(5px);
+}
+
+.nav-links a.active {
+  background-color: black;
+  color: white;
+}
+
+.nav-links a.active:hover {
+  background-color: #333;
+}
+
+@media (max-width: 768px) {
+  .sidebar {
+    width: 100%;
+    height: auto;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    padding: 10px;
+    z-index: 1000;
+    margin: 10px;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    transition: background-color 0.3s ease;
+  }
+
+  .logo {
+    display: none;
+  }
+
+  .nav-links {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .nav-links li {
+    margin-bottom: 0;
+  }
+
+  .nav-links a {
+    flex-direction: column;
+    padding: 10px;
+    font-size: 0.8rem;
+    text-align: center;
+  }
+
+  .nav-links a:hover {
+    background-color: #e7e7e7;
+    transform: translateX(0);
+  }
+
+  .nav-links a i {
+    margin-bottom: 5px;
+  }
+
+  .nav-links a span {
+    display: none;
+  }
+}

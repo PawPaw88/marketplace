@@ -1,0 +1,233 @@
+.back-button {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  color: #666;
+  text-decoration: none;
+  font-size: 1rem;
+  margin-bottom: 15px;
+  padding: 8px 12px;
+  border-radius: 8px;
+  width: fit-content;
+}
+
+.back-button:hover {
+  color: #272727;
+}
+
+.back-button i {
+  font-size: 1.2rem;
+}
+
+.payment-methods-container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.payment-methods-container h1 {
+  font-size: 1.8rem;
+  color: #333;
+  margin-bottom: 20px;
+  padding: 15px;
+  font-weight: 400;
+  border-bottom: 1px solid #ddd;
+}
+
+.payment-methods {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+  padding: 15px;
+}
+
+.payment-method {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  background-color: #fff;
+}
+
+.payment-method:hover {
+  background-color: #f8f8f8;
+  transform: translateY(-2px);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.payment-method.active {
+  border: 2px solid #4caf50;
+  background-color: #f1f8e9;
+}
+
+.payment-method i {
+  font-size: 24px;
+  color: #666;
+  min-width: 24px;
+}
+
+.payment-method.active i {
+  color: #4caf50;
+}
+
+.payment-method span {
+  font-size: 1rem;
+  color: #333;
+}
+
+.payment-method.default {
+  border: 2px solid #4caf50;
+  background-color: #f8fdf8;
+}
+
+.payment-method.default::after {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 0.8rem;
+  color: #4caf50;
+}
+
+.payment-method-info {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  flex: 1;
+}
+
+.payment-details {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.payment-details span:first-child {
+  font-weight: 500;
+  color: #333;
+}
+
+.balance {
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.topup-button {
+  padding: 8px 16px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: background-color 0.3s ease;
+  white-space: nowrap;
+  text-decoration: none;
+  display: inline-block;
+  text-align: center;
+}
+
+.topup-button:hover {
+  background-color: #45a049;
+}
+
+@media (max-width: 480px) {
+  .payment-methods-container {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .payment-methods-container h1 {
+    font-size: 1.4rem;
+    padding: 10px;
+  }
+}
+
+@media (max-width: 768px) {
+  .payment-methods {
+    grid-template-columns: 1fr;
+    gap: 15px;
+    padding: 10px;
+  }
+
+  .payment-method {
+    padding: 15px;
+  }
+
+  .payment-methods-container h1 {
+    padding: 10px;
+    font-size: 1.3rem;
+  }
+
+  .payment-methods-container {
+    width: 95%;
+    padding: 15px;
+  }
+}
+
+.coming-soon-popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: linear-gradient(135deg, #4caf50, #45a049);
+  color: white;
+  padding: 20px 30px;
+  border-radius: 12px;
+  font-size: 1rem;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  z-index: 1000;
+  text-align: center;
+  width: 80%;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.coming-soon-popup::before {
+  content: "🚧";
+  font-size: 4rem;
+}
+
+@keyframes popupBounce {
+  0% {
+    transform: translate(-50%, -50%) scale(0.7);
+  }
+  50% {
+    transform: translate(-50%, -50%) scale(1.05);
+  }
+  100% {
+    transform: translate(-50%, -50%) scale(1);
+  }
+}
+
+.coming-soon-popup.show {
+  opacity: 1;
+  visibility: visible;
+  animation: popupBounce 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+@media (max-width: 768px) {
+  .coming-soon-popup {
+    padding: 15px 20px;
+    flex-direction: row;
+    font-size: 0.9rem;
+    width: 90%;
+    max-width: 320px;
+  }
+
+  .coming-soon-popup::before {
+    font-size: 2.5rem;
+    margin-bottom: 0;
+  }
+}

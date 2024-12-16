@@ -1,0 +1,181 @@
+.profile-container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.back-button {
+  display: none;
+  align-items: center;
+  gap: 5px;
+  color: #666;
+  text-decoration: none;
+  font-size: 1rem;
+  margin-bottom: 15px;
+  border-radius: 8px;
+  width: fit-content;
+}
+
+.back-button:hover {
+  color: #272727;
+}
+
+.back-button i {
+  font-size: 1.2rem;
+}
+
+h1.profile-title {
+  font-size: 1.8rem;
+  color: #333;
+  margin-bottom: 20px;
+  padding: 15px;
+  font-weight: 400;
+  border-bottom: 1px solid #ddd;
+}
+
+.profile-details {
+  margin-top: 20px;
+}
+.profile-header {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+.profile-avatar {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.user-info {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+.user-info h1 {
+  margin: 0;
+  font-size: 1.5rem;
+  color: #333;
+  text-align: left;
+}
+
+.user-email {
+  margin: 5px 0 0;
+  color: #666;
+  font-size: 0.9rem;
+  text-align: left;
+}
+
+.user-balance {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  margin: 5px 0 0;
+  color: #4caf50;
+  font-size: 1rem;
+  font-weight: 500;
+  text-align: left;
+}
+
+.user-balance i {
+  font-size: 1.2rem;
+}
+
+.profile-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.profile-action-btn {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 15px;
+  text-decoration: none;
+  color: #333;
+  border-radius: 8px;
+  transition: background-color 0.2s ease;
+}
+
+.profile-action-btn:hover {
+  background-color: #e7e7e7;
+}
+
+.profile-action-btn.logout {
+  color: #ff4444;
+}
+
+.profile-action-btn.logout:hover {
+  background-color: #ffe0e0;
+}
+
+@media (min-width: 769px) {
+  .back-button {
+    display: flex;
+  }
+
+  .profile-container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  h1.profile-title {
+    padding: 10px;
+    font-size: 1.3rem;
+  }
+}
+
+@media (max-width: 480px) {
+  h1.profile-title {
+    font-size: 1.4rem;
+    padding: 10px;
+  }
+}
+
+.myfurniture-pay {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+    background-color: #f8fdf8;
+    border: 2px solid #4caf50;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.pay-info {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.pay-info i {
+    font-size: 24px;
+    color: #4caf50;
+}
+
+.pay-details {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.pay-details span:first-child {
+    font-weight: 500;
+    color: #333;
+}
+
+.pay-details .balance {
+    font-size: 1.1rem;
+    color: #4caf50;
+    font-weight: 500;
+}

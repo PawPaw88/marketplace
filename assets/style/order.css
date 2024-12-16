@@ -1,0 +1,478 @@
+.orders-container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.orders-container h1 {
+  font-size: 1.8rem;
+  color: #333;
+  margin-bottom: 20px;
+  padding: 15px;
+  font-weight: 400;
+  border-bottom: 1px solid #ddd;
+}
+
+.empty-state {
+  text-align: center;
+  padding: 100px 20px;
+}
+
+.empty-state i {
+  font-size: 4rem;
+  color: #ccc;
+  margin-bottom: 15px;
+}
+
+.empty-state p {
+  color: #666;
+  font-size: 1.1rem;
+  margin-bottom: 20px;
+}
+
+.shop-now-btn {
+  display: inline-block;
+  padding: 12px 25px;
+  background-color: #4caf50;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: 500;
+  transition: background-color 0.3s ease;
+}
+
+.shop-now-btn:hover {
+  background-color: #45a049;
+}
+
+.orders-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.order-card {
+  overflow: hidden;
+}
+
+.order-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #eee;
+}
+.seller-info {
+  margin: 0;
+  background-color: white;
+}
+.seller-info span {
+  font-weight: 500;
+  color: #333;
+}
+
+.order-status {
+  padding: 5px 12px;
+  border-radius: 15px;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.order-status.menunggu {
+  background-color: #fff3cd;
+  color: #856404;
+}
+
+.order-status.diproses {
+  background-color: #cce5ff;
+  color: #004085;
+}
+
+.order-status.dikirim {
+  background-color: #d4edda;
+  color: #155724;
+}
+
+.order-status.selesai {
+  background-color: #d1e7dd;
+  color: #0f5132;
+}
+
+.order-status.dibatalkan {
+  background-color: #f8d7da;
+  color: #721c24;
+}
+
+.order-status.pending {
+  background-color: #fff3cd;
+  color: #856404;
+}
+
+.order-content {
+  display: flex;
+  padding: 15px;
+  gap: 15px;
+  position: relative;
+  overflow: hidden;
+}
+
+.product-image {
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+  background-color: #f5f7f9;
+  border-radius: 8px;
+}
+
+.order-details {
+  flex: 1;
+  transition: transform 0.3s ease-out;
+}
+
+.order-details h3 {
+  font-size: 1.1rem;
+  color: #333;
+  margin-bottom: 8px;
+}
+
+.quantity {
+  color: #666;
+  font-size: 0.9rem;
+  margin-bottom: 5px;
+}
+
+.total {
+  color: #4caf50;
+  font-weight: 500;
+}
+
+.order-date {
+  position: static;
+  font-size: 0.85rem;
+  color: #666;
+  text-align: right;
+}
+
+.review-btn {
+  padding: 8px 15px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: background-color 0.3s ease;
+}
+
+.review-btn:hover {
+  background-color: #45a049;
+}
+
+.back-button {
+  display: none;
+  align-items: center;
+  gap: 5px;
+  color: #666;
+  text-decoration: none;
+  font-size: 1rem;
+  margin-bottom: 15px;
+  padding: 8px 12px;
+  border-radius: 8px;
+  width: fit-content;
+}
+
+.back-button:hover {
+  color: #272727;
+}
+
+.back-button i {
+  font-size: 1.2rem;
+}
+
+@media (min-width: 769px) {
+  .back-button {
+    display: flex;
+  }
+}
+
+@media (max-width: 768px) {
+  .orders-container h1 {
+    padding: 10px;
+    font-size: 1.3rem;
+  }
+  .orders-container {
+    padding: 15px;
+    margin-bottom: 70px;
+  }
+
+  .order-content {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+
+  .product-image {
+    width: 80px;
+    height: 80px;
+  }
+
+  .order-details h3 {
+    font-size: 1rem;
+  }
+
+  .order-footer {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .product-description {
+    padding-right: 0;
+  }
+
+  .order-date {
+    text-align: left;
+  }
+}
+
+@media (max-width: 480px) {
+  .orders-container {
+    width: 95%;
+  }
+
+  .orders-container h1 {
+    font-size: 1.4rem;
+    padding: 10px;
+  }
+
+  .order-header {
+    padding: 10px;
+  }
+
+  .order-content {
+    padding: 10px;
+  }
+
+  .product-image {
+    width: 70px;
+    height: 70px;
+  }
+
+  .order-details h3 {
+    font-size: 0.9rem;
+  }
+
+  .quantity,
+  .total {
+    font-size: 0.8rem;
+  }
+}
+
+.remove-wishlist {
+  background: none;
+  border: none;
+  color: #ff4444;
+  cursor: pointer;
+  padding: 5px;
+  font-size: 1.2rem;
+  transition: color 0.3s ease;
+  position: absolute;
+  right: 15px;
+  top: 15px;
+}
+
+.remove-wishlist:hover {
+  color: #cc0000;
+}
+
+.price {
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: #4caf50;
+  margin: 8px 0;
+}
+
+.add-to-cart-btn {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: background-color 0.3s ease;
+}
+
+.add-to-cart-btn:hover {
+  background-color: #45a049;
+}
+
+.view-product-btn {
+  display: inline-block;
+  padding: 8px 15px;
+  background-color: #4caf50;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 0.9rem;
+  transition: background-color 0.3s ease;
+  border: none;
+  cursor: pointer;
+}
+
+.view-product-btn:hover {
+  background-color: #45a049;
+}
+
+.product-description {
+  color: #666;
+  font-size: 0.9rem;
+  margin-bottom: 4px;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.order-card {
+  position: relative;
+  overflow: hidden;
+}
+
+.product-description,
+.order-date {
+  display: block;
+}
+
+.seller-name-wishlist {
+  padding-bottom: 5px;
+}
+
+/* Shipping Timeline Styles */
+.shipping-timeline {
+  display: flex;
+  align-items: center;
+  margin: 15px 0;
+  position: relative;
+  padding: 0 10px;
+}
+
+.timeline-item {
+  flex: 0;
+  text-align: left;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+  min-width: 80px;
+}
+
+.timeline-item:not(:last-child)::after {
+  content: "";
+  position: absolute;
+  top: 10px;
+  left: 20px;
+  width: 80%;
+  height: 2px;
+  background-color: #e0e0e0;
+  z-index: 1;
+}
+
+.timeline-point {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #e0e0e0;
+  position: relative;
+  z-index: 2;
+}
+
+.timeline-item span {
+  font-size: 0.8rem;
+  color: #666;
+  white-space: nowrap;
+}
+
+.timeline-item.active .timeline-point {
+  background-color: #4caf50;
+}
+
+.timeline-item.active span {
+  color: #4caf50;
+  font-weight: 500;
+}
+
+.timeline-item.active:not(:last-child)::after {
+  background-color: #4caf50;
+}
+
+/* Responsive Timeline */
+@media (max-width: 768px) {
+  .shipping-timeline {
+    gap: 10px;
+    margin: 10px 0;
+  }
+
+  .timeline-item {
+    min-width: 65px;
+  }
+
+  .timeline-item:not(:last-child)::after {
+    width: 120%;
+    top: 7px;
+    left: 1px;
+  }
+
+  .timeline-point {
+    width: 16px;
+    height: 16px;
+  }
+
+  .review-btn {
+    margin-top: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .timeline-item span {
+    transform: none;
+    font-size: 0.6rem;
+    margin-top: 4px;
+  }
+
+  .timeline-item {
+    min-width: 45px;
+  }
+
+  .timeline-item:not(:last-child)::after {
+    width: 120%;
+    top: 6px;
+    left: 5px;
+  }
+
+  .timeline-point {
+    width: 12px;
+    height: 12px;
+  }
+}
+
+.seller-info img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.order-footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.order-date {
+  margin: 0;
+}
+
+.review-btn {
+  margin: 0;
+}
