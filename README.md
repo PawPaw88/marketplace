@@ -48,3 +48,14 @@ function connectDB() {
    http://localhost/marketplace
    ```
    Sesuaikan URL jika menggunakan konfigurasi yang berbeda.
+
+## Akun Demo:
+Penjual:
+ - bahtiar@gmail.com - bahtiar123
+ - seller@gmail.com - seller123
+ - tes@gmail.com - tes123
+ - new@gmail.com - new123
+Pembeli:
+ - buyer@gmail.com - buyer123
+ - asep@gmail.com - asep123
+
