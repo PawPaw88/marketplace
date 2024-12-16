@@ -1,6 +1,6 @@
 # Marketplace Furniture
 
-Selamat datang di proyek Marketplace Furniture! Ini adalah aplikasi web untuk jual beli furniture yang menggunakan PHP dan MongoDB.
+Selamat datang di proyek Marketplace Furniture! Ini adalah aplikasi web untuk jual beli furniture yang menggunakan PHP dan MongoDB. Project ini saya buat menggunakan Cursor AI Editor
 
 ## Persyaratan Sistem
 
