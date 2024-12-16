@@ -19,6 +19,7 @@ Selamat datang di proyek Marketplace Furniture! Ini adalah aplikasi web untuk ju
 3. Buka Command Prompt atau Terminal, navigasikan ke folder proyek anda
 
 4. Impor database yang sudah disediakan menggunakan perintah:
+(pastikan untuk mendownload MongoDB Database Tools terlebih dahulu dan menambahkan folder bin nya ke path)
 
 ```
 
